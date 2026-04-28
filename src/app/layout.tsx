@@ -1,54 +1,52 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { AppShell } from "@/components/app-shell";
 import { CursorSparkle } from "@/components/cursor-sparkle";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
   display: "swap",
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-  display: "swap",
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://gavinlee.dev"),
+  metadataBase: new URL("https://gavinleefernandes.com"),
   title: {
-    default: "Gavinlee Fernandes | Integrations / Implementation Engineer",
+    default: "Gavinlee Fernandes | IT Production Support & Developer",
     template: "%s | Gavinlee Fernandes",
   },
   description:
-    "Integrations / Implementation (Fiorano ESB) Engineer specialising in API development, fintech integrations, and DevOps automation for enterprise banking systems across East Africa.",
+    "Manager – IT Digital Production Support at Diamond Trust Bank. Keeping banking systems resilient and building fast, reliable digital products across East Africa's fintech ecosystem.",
   keywords: [
     "Gavinlee Fernandes",
-    "Fiorano ESB Engineer",
-    "Technical Implementation Engineer",
-    "FinTech",
-    "API Integrations",
-    "DevOps",
+    "IT Production Support",
     "Diamond Trust Bank",
-    "Next.js portfolio",
+    "Fiorano ESB",
+    "Banking Systems",
+    "API Integrations",
+    "Web Developer Kenya",
+    "Next.js developer",
+    "Nairobi Kenya",
+    "SLA management",
+    "incident management",
   ],
-  authors: [{ name: "Gavinlee Fernandes" }],
+  authors: [{ name: "Gavinlee Xavier Fernandes" }],
   openGraph: {
-    title: "Gavinlee Fernandes | Integrations / Implementation Engineer",
+    title: "Gavinlee Fernandes | IT Production Support & Developer",
     description:
-      "Fiorano ESB engineer building secure API integrations, DevOps tooling, and resilient banking middleware.",
-    url: "https://gavinlee.dev",
-    siteName: "Gavinlee Fernandes Portfolio",
+      "Manager – IT Digital Production Support keeping banking systems alive and building fast, reliable digital products.",
+    url: "https://gavinleefernandes.com",
+    siteName: "Gavinlee Fernandes",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gavinlee Fernandes | Integrations / Implementation Engineer",
+    title: "Gavinlee Fernandes | IT Production Support & Developer",
     description:
-      "Fiorano ESB engineer building secure API integrations, DevOps tooling, and resilient banking middleware.",
+      "Manager – IT Digital Production Support keeping banking systems alive and building fast, reliable digital products.",
     creator: "@gavoxavier",
   },
   icons: {
@@ -64,9 +62,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
-      >
+      <body className={`${spaceGrotesk.variable} font-sans antialiased`}>
         <a href="#main-content" className="skip-link">
           Skip to main content
         </a>

@@ -10,8 +10,8 @@ export default function ContactPage() {
     <div className="space-y-16 pb-12">
       <SectionHeader
         eyebrow="Contact"
-        title="Let's collaborate on your next integration milestone."
-        description="Whether you're scaling fintech partnerships, strengthening DevSecOps guardrails, or rethinking developer experience, I'd love to help."
+        title="Let's build something together."
+        description="Need a website, a system integration, or just someone reliable to keep your tech running? I'm available for projects — reach out directly or fill in the form."
       />
 
       <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr]">
@@ -25,10 +25,10 @@ export default function ContactPage() {
           className="flex flex-col gap-6"
         >
           <div className="rounded-3xl border border-zinc-800/60 bg-zinc-900/80 p-6 text-sm text-zinc-400 shadow-xl shadow-zinc-950/60">
-            <h3 className="text-lg font-semibold text-zinc-100">Let&apos;s start with a quick call.</h3>
+            <h3 className="text-lg font-semibold text-zinc-100">Quickest ways to reach me.</h3>
             <p className="mt-3 leading-relaxed">
-              Share your context in the form or reach out directly using the channels below.
-              I typically respond within 24–48 hours.
+              WhatsApp is fastest for project conversations. Email works great for formal
+              enquiries. I typically respond within a few hours.
             </p>
             <dl className="mt-5 space-y-2">
               <div className="flex items-center justify-between">
@@ -43,11 +43,13 @@ export default function ContactPage() {
                 </dd>
               </div>
               <div className="flex items-center justify-between">
-                <dt>Phone</dt>
+                <dt>WhatsApp</dt>
                 <dd>
                   <a
-                    href={`tel:${contactInfo.phone.replace(/\s+/g, "")}`}
-                    className="text-orange-400 transition-colors hover:text-orange-300"
+                    href={contactInfo.whatsapp}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-green-400 transition-colors hover:text-green-300"
                   >
                     {contactInfo.phone}
                   </a>

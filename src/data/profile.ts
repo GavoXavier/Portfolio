@@ -2,12 +2,13 @@ export const contactInfo = {
   name: "Gavinlee Xavier Fernandes",
   role: "Manager – IT Digital Production Support",
   summary:
-    "Manager – IT Digital Production Support at Diamond Trust Bank, responsible for L1/L2 production support across in-house applications, APIs, and integration services. Focused on incident triage, system monitoring, production deployments, and digital partner onboarding. Previously implemented and deployed 10+ Fiorano ESB APIs via FinSense Africa, with a strong foundation in full-stack development and DevOps automation.",
+    "Manager – IT Digital Production Support at Diamond Trust Bank, responsible for L1/L2 production support across in-house applications, APIs, and integration services. Keeping East Africa's banking infrastructure resilient — one incident at a time.",
   location: "Nairobi, Kenya",
   phone: "+254 700 485000",
   email: "gavoxavier@gmail.com",
-  linkedin: "https://www.linkedin.com/in/gavinlee-fernandes-a347a9281",
-  github: "https://github.com/gavoxavier",
+  linkedin: "https://www.linkedin.com/in/gavinlee-fernandes-a347a9281/",
+  github: "https://github.com/GavoXavier",
+  whatsapp: "https://wa.me/254700485000",
   resumeUrl: "/Gavinlee_Fernandes_Resume.pdf",
 };
 
@@ -71,6 +72,7 @@ export const skills = {
     "OAuth2 & Certificate Lifecycle Mgmt",
     "API Performance Monitoring",
     "Compliance & Audit Support",
+    "SLA Management",
     "Oracle Cloud Infrastructure",
   ],
   tooling: [
@@ -95,18 +97,57 @@ export const skills = {
     "Python FastAPI",
     "Power BI Dashboards",
     "Terraform (Foundational)",
+    "PHP / Web Development",
   ],
 };
 
 export const certifications = [
   {
+    title: "Beneficial Ownership",
+    issuer: "Diamond Trust Bank",
+    category: "Banking & Compliance",
+    icon: "shield",
+  },
+  {
+    title: "Customer Due Diligence",
+    issuer: "Diamond Trust Bank",
+    category: "Banking & Compliance",
+    icon: "shield",
+  },
+  {
+    title: "Data Protection Training I & II",
+    issuer: "Diamond Trust Bank",
+    category: "Banking & Compliance",
+    icon: "shield",
+  },
+  {
+    title: "PEP Training",
+    issuer: "Diamond Trust Bank",
+    category: "Banking & Compliance",
+    icon: "shield",
+  },
+  {
+    title: "Sanctions CTF CPF",
+    issuer: "Diamond Trust Bank",
+    category: "Banking & Compliance",
+    icon: "shield",
+  },
+  {
+    title: "Fiorano Associate Developer – Cloud Native Integration",
+    issuer: "Fiorano Software",
+    category: "Personal Endeavours",
+    icon: "cpu",
+  },
+  {
     title: "Oracle Cloud Infrastructure",
     issuer: "Oracle",
+    category: "Personal Endeavours",
     icon: "cloud",
   },
   {
     title: "Cisco CPP Advanced Programming",
     issuer: "Cisco",
+    category: "Personal Endeavours",
     icon: "cpu",
   },
 ];
@@ -122,7 +163,6 @@ export const projects = [
       "Improved onboarding turnaround for partner teams via searchable API specs and usage guides.",
     ],
     technologies: ["Next.js", "TypeScript", "Docker", "Azure DevOps", "MySQL"],
-    github: "https://github.com/gavoxavier",
     demo: "#",
     details: {
       overview:
@@ -149,10 +189,6 @@ export const projects = [
         { label: "Content & Data", items: ["MDX content collections", "OpenAPI schema ingestion", "MySQL metadata store"] },
         { label: "DevOps", items: ["Docker images", "Azure DevOps multi-stage pipelines", "Container registry release flow"] },
       ],
-      resources: [
-        { label: "Home", href: "#home" },
-        { label: "Authentication", href: "#authentication" },
-      ],
     },
   },
   {
@@ -164,7 +200,6 @@ export const projects = [
       "Introduced deterministic error reporting for relationship managers.",
     ],
     technologies: ["Fiorano ESB", "Node.js", "TypeScript", "XML/XSD", "Postman"],
-    github: "https://github.com/gavoxavier",
     demo: "#",
   },
   {
@@ -176,7 +211,6 @@ export const projects = [
       "Delivered secure passwordless authentication flow with audit logging.",
     ],
     technologies: ["C++", "JavaScript", "HTML/CSS", "Hardware Integration"],
-    github: "https://github.com/gavoxavier",
     demo: "#",
     details: {
       overview:
@@ -198,6 +232,40 @@ export const projects = [
     },
   },
   {
+    title: "Donation & Event Management System",
+    description:
+      "Final year university project — a web platform built for Meru School for Mentally Handicapped Children to manage donations, donor records, and community fundraising events.",
+    outcomes: [
+      "Streamlined donation tracking and donor management for the school's administrative team.",
+      "Event scheduling and attendance management for community fundraising activities.",
+      "Secure donor portal with records management and reporting dashboards.",
+    ],
+    technologies: ["PHP", "MySQL", "HTML/CSS", "JavaScript", "Bootstrap"],
+    demo: "#",
+    details: {
+      overview:
+        "A cause-driven web application developed as a final year project at Kenya Methodist University. The system enables Meru School for Mentally Handicapped Children to manage donor relationships, track fundraising campaigns, and organise community events from a single admin interface.",
+      features: [
+        {
+          title: "Donor management",
+          description: "Complete donor profiles with contribution history, contact records, and automated acknowledgement workflows.",
+        },
+        {
+          title: "Event coordination",
+          description: "Event creation, ticket management, and attendance tracking for fundraising activities and school open days.",
+        },
+        {
+          title: "Reporting dashboard",
+          description: "Summary analytics for total donations, event attendance, and donor engagement trends.",
+        },
+      ],
+      stack: [
+        { label: "Backend", items: ["PHP", "MySQL database", "Session-based authentication"] },
+        { label: "Frontend", items: ["HTML5/CSS3", "Bootstrap", "Vanilla JavaScript"] },
+      ],
+    },
+  },
+  {
     title: "Employee Attendance System",
     description:
       "Check-in/check-out attendance management platform with statistical analytics for performance insights and HR reporting.",
@@ -206,7 +274,6 @@ export const projects = [
       "Automated reporting dashboards for HR teams and management.",
     ],
     technologies: ["React.js", "Node.js", "MySQL", "Tailwind CSS"],
-    github: "https://github.com/gavoxavier",
     demo: "#",
   },
   {
@@ -218,7 +285,6 @@ export const projects = [
       "Integrated payment flow and guest notification system.",
     ],
     technologies: ["React.js", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
-    github: "https://github.com/gavoxavier",
     demo: "#",
   },
   {
@@ -230,7 +296,6 @@ export const projects = [
       "Added webhook-driven notifications and waitlist automation to boost court utilisation.",
     ],
     technologies: ["Next.js", "Prisma", "PostgreSQL", "Tailwind CSS", "Stripe"],
-    github: "https://github.com/gavoxavier",
     demo: "#",
   },
 ];
@@ -290,17 +355,17 @@ export const achievements = [
 export const contactLinks = [
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/gavinlee-fernandes-a347a9281",
-    description: "Professional updates and fintech insights.",
+    href: "https://www.linkedin.com/in/gavinlee-fernandes-a347a9281/",
+    description: "Professional updates, fintech insights, and connecting with peers across East Africa.",
   },
   {
     label: "GitHub",
-    href: "https://github.com/gavoxavier",
-    description: "In-flight experiments, integration tooling, and open-source work.",
+    href: "https://github.com/GavoXavier",
+    description: "Side projects, integration tooling, and open-source experiments.",
   },
   {
-    label: "Personal Blog",
-    href: "#",
-    description: "Coming soon: integration patterns, ESB deep dives, and DevOps notes.",
+    label: "WhatsApp",
+    href: "https://wa.me/254700485000",
+    description: "Quickest way to reach me for project discussions or urgent queries.",
   },
 ];

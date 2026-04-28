@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Github, Globe, ChevronDown } from "lucide-react";
+import { Globe, ChevronDown } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTilt } from "@/hooks/use-tilt";
 
@@ -70,19 +70,8 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
           </span>
         ))}
       </div>
-      <div className="mt-6 flex items-center gap-4 text-sm font-medium text-orange-500">
-        {project.github ? (
-          <Link
-            href={project.github}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 transition-colors duration-300 hover:text-amber-400"
-          >
-            <Github className="size-4" aria-hidden />
-            GitHub
-          </Link>
-        ) : null}
-        {project.demo && project.demo !== "#" ? (
+      {project.demo && project.demo !== "#" ? (
+        <div className="mt-6 flex items-center gap-4 text-sm font-medium text-orange-500">
           <Link
             href={project.demo}
             target="_blank"
@@ -92,8 +81,8 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
             <Globe className="size-4" aria-hidden />
             Live Demo
           </Link>
-        ) : null}
-      </div>
+        </div>
+      ) : null}
       {project.details ? (
         <div className="mt-6 border-t border-zinc-800/70 pt-6">
           <button
